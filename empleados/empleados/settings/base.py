@@ -1,4 +1,5 @@
 import os
+from decouple import config
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 from unipath import Path
@@ -9,7 +10,7 @@ BASE_DIR = Path(__file__).ancestor(3)
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'l&#7ycwj0ngkfpim)hdg%0mx2q#p+5t)ah=15j5_mwt3m!%*9x'
+SECRET_KEY = config('SECRET_KEY')
 
 # Application definition
 
