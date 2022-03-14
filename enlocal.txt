@@ -1,4 +1,0 @@
-desde local
-
-cambios desde git
-
